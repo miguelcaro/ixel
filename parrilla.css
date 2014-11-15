@@ -1,0 +1,336 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+    font-family: "gothic r";
+    src:url(fuentes/GOTHIC.TTF);
+}
+@font-face {
+    font-family: "gothic b";
+    src:url(fuentes/GOTHICB.TTF);
+}
+@font-face {
+    font-family: "majalla r";
+    src:url(fuentes/majalla.ttf);
+}
+@font-face {
+    font-family: "majalla b";
+    src:url(fuentes/majallab.ttf);
+}
+
+body{
+	padding:0;
+	margin:0;
+	overflow-y: scroll;
+}
+
+video#bgvid {
+	position: fixed; 
+	right: 0; 
+	bottom: 0;
+	min-width: 100%; 
+	min-height: 100%;
+	width: auto; 
+	height: auto; 
+	z-index: -100;
+	background: url(polina.jpg) no-repeat;
+	background-size: cover;
+}
+
+
+/*-----navegacion top----*/
+
+#nav{
+	background-color:#ffa745;
+	z-index:999;
+}
+
+#navigate{
+	width:960px;
+	/*background-color:#FFF;*/	
+	text-align:center;
+	margin:0 auto;
+}
+
+#nav ul{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+	font-family:"gothic r";
+	font-size:16px;
+}
+
+#nav ul li{
+	display:inline-block;
+}
+
+#nav ul li:hover{
+	background-color:#000;
+	opacity:0.8;
+	transition:ease-out 300ms;
+}
+
+#nav ul li img{
+	vertical-align:middle;
+	padding-left:5px;
+}
+
+#nav ul li a,visited{
+	color:#FFF;
+	display:block;
+	padding:15px;
+	text-decoration:none;
+}
+
+#nav ul li a:hover{
+	color:#FFF;
+}
+
+#nav ul li:hover ul{
+	display:block;
+}
+
+#nav ul ul{	
+	text-align:left;
+	display:none;
+	position:absolute;
+	background-color:#666;
+	min-width:200px;
+	
+}
+
+#nav ul ul li{
+	display:block;
+}
+
+#nav ul ul li img{
+	vertical-align:middle;
+	padding-right:10px;
+}
+
+#nav ul ul li a,visited{
+	color:#fff;
+}
+
+#nav ul ul li:hover{
+	background-color:#333;
+}
+
+
+/* SECCION 1 */
+#seccion1{
+	width:100%;
+	float:left;
+	background-color:rgba(0,0,0,0.8);
+	opacity:1;
+}
+
+
+#main{
+	width:1200px;
+	background-color:#FFFFFF;
+	color:#666666;
+	font-family:"majalla r";
+	height:185px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#banner{
+	height:160px;
+	padding-top:20px;
+	margin-left:auto;
+	margin-right:auto;
+	width:960px;
+}
+
+#congreso{
+	width:600px;
+	float:left;
+}
+.primario{
+	margin:0;
+	padding-top:8px;
+	width:600px;
+	float:left;
+	font-size:50px;
+	line-height: 0.7;
+}
+	
+.secundario{	
+	margin:0;
+	padding:0;
+	width:600px;
+	float:left;
+	font-size:24px;
+}
+
+#inscripcion{
+	margin-top:-60px;
+	float:left;
+	width:217px;
+}
+
+.backwhite{
+	background-color:#FFFFFF;
+	width:1200px;
+	margin:auto;
+	opacity:1;
+}
+
+
+/* redes*/
+#redes{
+	margin:auto;
+	width:1200px;
+	height:45px;
+	background-color:#fff;
+}
+
+.red{
+	float:left;
+	text-align:center;
+	padding-top:5px;
+}
+
+#red1{
+	width:20%;
+	height:100%;
+	background-color:#b2b2b2;
+}
+#red1:hover{
+	transition:ease-in-out 100ms;
+	background-color:#CE933E;
+}
+
+#red2{
+	width:20%;
+	height:100%;
+	background-color:#b2b2b2;
+}
+#red2:hover{
+	transition:ease-in-out 100ms;
+	background-color:#322fb2;
+}
+
+#red3{
+	width:20%;
+	height:100%;
+	background-color:#b2b2b2;
+}
+#red3:hover{
+	transition:ease-in-out 100ms;
+	background-color:#e71c88;
+}
+
+#red4{
+	width:20%;
+	height:100%;
+	background-color:#b2b2b2;
+}
+#red4:hover{
+	transition:ease-in-out 100ms;
+	background-color:#069dd8;
+}
+
+#red5{
+	width:20%;
+	height:100%;
+	background-color:#b2b2b2;
+}
+#red5:hover{
+	transition:ease-in-out 100ms;
+	background-color:#ea1d26;
+}
+
+/*----parrilla---*/
+
+#parrilla-cont{
+	width:1200px;
+	margin:auto;
+	background-color:#FFFFFF;
+}
+	
+#parrilla{
+	width:960px;
+	margin:auto;
+	height:800px;
+	padding-top:30px;
+}
+
+.titulo{
+	font-family:"majalla b";
+	font-size:50px;
+	color:#2058d7;
+}
+	
+
+/* -----------------------------footer----------------------------- 4*/
+
+#footer{
+	padding-top:30px;
+	padding-bottom:30px;
+	float:left;
+	width:100%;
+ 	background-color:rgba(0,0,0,0.8);
+	opacity:1;
+}
+
+#foot-info{
+	
+	width:960px;
+	margin:auto;
+}
+
+#contactos{
+	width:20%;
+	color:#FFFFFF;
+	font-family:"majalla r";
+	float:left;
+}
+
+#cont{
+	font-family:"gothic r";
+	margin-top:-30px;
+	font-size:13px;
+}
+
+#mini-redes{
+	height:30px;
+	margin-top:15px;
+}
+
+.ima-foot{
+	float:left;
+	padding-left:76px;
+}
+
+#sponsors{
+	color:#FFFFFF;
+	font-family:"majalla r";
+	width:640px;
+	float:left;
+	margin-left:18px;
+	background-color:#FFFFFF;
+	border: 2px solid;
+    border-radius: 25px;
+}
+
+.patrocinio{
+	text-align:center;
+	width:100%;
+}
+
+h2{
+	margin-bottom:0;
+	color:#333;
+	
+}
+
+hr{
+	width:420px;
+	height:2px;
+	background-color:#CCC;
+	opacity:0.4;
+	clear:both;
+}

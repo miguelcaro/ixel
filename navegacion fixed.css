@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+
+a{
+	text-decoration:none;
+	font-family:"gothic r";
+	font-size:15px;
+	color:#fff;
+}
+
+a, visited{
+	text-decoration:none;
+	font-family:"gothic r";
+	font-size:15px;
+	color:#fff;
+}
+
+#nav-estatica{
+	width:190px;
+	position:fixed;
+	font-family:"gothic r";
+	font-size:15px;
+	color:#fff;
+	z-index:999;
+	right:0%;
+	top:35%;
+	color:#fff;
+}
+
+p{
+	margin:0;
+	padding:8px;
+	color:#fff;
+}
+
+.p2{
+	font-size:12px;
+}
+
+.caja{
+	text-align:center;
+	height:36px;
+	background-image:url(imagenes/cajaon.png);
+}
+
+.caja:hover{
+	background-image:url(imagenes/cajaoff.png);
+	font-family:"gothic r";
+}
+
+.caja-ins{
+	text-align:center;
+	height:36px;
+	background-image:url(imagenes/inscripciones.png);
+}
+
+.caja-ins:hover{
+	background-image:url(imagenes/cajaoff.png);
+	font-family:"gothic r";
+}

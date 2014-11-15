@@ -1,0 +1,354 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>IXEL MODA</title>
+
+<link href="organizacion.css" rel="stylesheet" type="text/css" />
+<link href="NAV BAR TOP.css" rel="stylesheet" type="text/css" />
+<link href="provicional.css" rel="stylesheet" type="text/css" />
+<link href="navegacion fixed.css" rel="stylesheet" type="text/css" />
+<link href="owl.carousel.css" rel="stylesheet"/>
+
+<!--fancy box-->
+<!-- Add jQuery library -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="js/fancy-box/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="js/fancy-box/source/jquery.fancybox.css" />
+<script type="text/javascript" src="js/fancy-box/source/jquery.fancybox.pack.js"></script>
+
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+<link rel="stylesheet" href="js/fancy-box/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
+<script type="text/javascript" src="js/fancy-box/source/helpers/jquery.fancybox-thumbs.js"></script>
+
+<!--carrousel de logos-->
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+
+<style>
+	.customNavigation{
+text-align: center;
+}
+//use styles below to disable ugly selection
+.customNavigation a{
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+ 
+</style>
+<link href="owl.carousel.css" rel="stylesheet" type="text/css" />
+<script>
+
+    $(document).ready(function() {
+     
+	    var owl = $("#owl-demo");
+     
+    	owl.owlCarousel({
+    	items : 5, //10 items above 1000px browser width
+    	itemsDesktop : [1000,5], //5 items between 1000px and 901px
+    	itemsDesktopSmall : [900,3], // betweem 900px and 601px
+    	itemsTablet: [600,2], //2 items between 600 and 0
+    	itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+    });
+	
+	// Para que el carousel se mueva cuando cargue la pagina 
+    owl.trigger('owl.play',1800); //mil es un segundo
+    // Esto es si quieres ponerles botones..
+    $(".next").click(function(){
+    owl.trigger('owl.next');
+    })
+    $(".prev").click(function(){
+    owl.trigger('owl.prev');
+    })
+    $(".play").click(function(){
+    owl.trigger('owl.play',1000); //owl.play event accept autoPlay speed as second parameter
+    })
+    $(".stop").click(function(){
+    owl.trigger('owl.stop');
+    })
+     
+    });
+
+
+
+</script>
+
+</head>
+
+<body>
+	
+    <video autoplay loop poster="polina.jpg" id="bgvid">
+		<source src="video_ixel.webm" type="video/webm">
+		<source src="video_ixel.mp4" type="video/mp4">
+	</video>
+    
+ <!-- NAVEGACION MOVIL-->
+ <a id="top"></a>
+    <div id="nav">
+    	<div id="navigate">
+    		<ul>
+    			<li><a href="javascript:void()">Home</a></li><li>
+        		<a href="javascript:void()">Ixel Moda <img src="imagenes/arrow.png"/></a>
+                	<ul>
+                    	<li><a href="file:///Volumes/Macintosh%20HD/Users/carlosgomez/Desktop/IXEL/indexmarca.html"><img src="imagenes/circle.png"/>La Marca</a></li>
+                        <li><a href="indexmarca.html"><img src="imagenes/circle.png"/>El Congreso</a></li>
+                        <li><a href="indexmarca.html"><img src="imagenes/circle.png"/>Organización</a></li>
+                    </ul>
+                </li><li>
+        		<a href="javascript:void()">Cartagena, Destino de moda</a></li><li>
+        		<a href="javascript:void()">Salon Artesanal</a></li><li>
+        		<a href="javascript:void()">Premios In Fashion</a></li><li>
+        		<a href="#foot">Contactos</a></li>
+   	 		</ul>
+    	</div>
+    </div>
+<!-- NAVEGACION ESTATICA-->
+
+	<div id="nav-estatica">
+    	<a href="javascript:void()"><div class="caja"><p>PARRILLA 2015</p>
+        </div></a>
+        <a href="javascript:void()"><div class="caja">
+    		<p class="p2">CONGRESO ACADÉMICO</p>
+        </div></a>
+        <a href="javascript:void()"><div class="caja">
+    		<p>FORO SECTORIAL</p>
+        </div></a>
+        <a href="javascript:void()"><div class="caja">
+    		<p>PASARELAS 2015</p>
+        </div></a>
+        <a href="javascript:void()"><div class="caja">
+    		<p class="p2">ALOJAMIENTO Y COMIDAS</p>
+        </div></a>	
+        <a href="javascript:void()"><div class="caja-ins">
+    		<p>INSCRIPCIONES</p>
+        </div></a>
+    </div>
+
+    <!--seccion3-->
+    <div id="seccion3">
+    	<div id="cont-toggle">
+    	<div class="comunicado">
+        	<div class="tabs">
+    
+   				<div class="tab">
+      				<input type="radio" id="tab-1" name="tab-group-1" checked>
+       				<label for="tab-1">CONCILIO ACADÉMICO</label>
+       
+       				<div class="content">
+       					<h1 class="titulo-comunicado">CONCILIO ACADÉMICO</h1>
+        				<p2 class="cuerpo-texto" style="font-weight:bold; margin-right:300px; color:#737373">COMITÉ TÉCNICO</p>
+
+<p class="texto-apoyo" style="font-weight:bold; margin-right:300px; text-transform: uppercase">Erika Rohenes - Colombia.</p>
+<p class="texto-apoyo" style="margin-top:-15px; padding-left:30px">Presidenta Ejecutiva de Ixel Moda.</p><p class="texto-apoyo" style="margin-top:-15px; padding-left:30px">Administradora de empresas especialista en mercadeo, imagen y comunicación de marca. Su experiencia tras la producción de eventos de moda le ha permitido trabajar con reconocidos diseñadores, marcas multinacionales y grandes superficies. Ha diseñado y dirigido eventos de alto impacto en el Caribe Colombiano como Plataforma K, de la Cámara de Comercio de Barranquilla; Expobelleza de Fenalco Atlántico; e Ixel Moda.</p>
+
+<p class="texto-apoyo" style="font-weight:bold; margin-right:300px; text-transform: uppercase">Danilo Cañizares – Colombia.</p>
+<p class="texto-apoyo" style="margin-top:-15px; padding-left:30px">Curador del congreso.</p><p class="texto-apoyo" style="margin-top:-15px; padding-left:30px">Diseñador de Modas, con especialización en Gestion del Mercado de Productos de Moda de la UCLA (USA), Programación Industrial de Colecciones del CETIH Paris (FRANCIA)e investigación de Evolución del Consumidor de Domus Academy Milano (ITALIA). Catedratico por tradición con más de 15 años de experiencia en el teorema del diseño, asesor consultor en inteligencia de mercado y moda. Experto conferencista y Coach empresarial.</p>
+
+<p class="texto-apoyo" style="font-weight:bold; margin-right:300px; text-transform: uppercase">Regina Root - USA.</p>
+<p class="texto-apoyo" style="margin-top:-15px; padding-left:30px">Presidenta Comité Científico.</p><p class="texto-apoyo" style="margin-top:-15px; padding-left:30px">Profesora Asociada de Lenguas Modernas y Literatura de la Universidad William & Mary en Virginia. Programa de Estudios de Comunidad, ciencia Ambiental y Política. Autora del célebre libro “The Latin American Fashion Readers”, premio Whitaker a mejor libro.</p>
+
+<p class="texto-apoyo" style="font-weight:bold; margin-right:300px; text-transform: uppercase">Alex Blanch – España.</p>
+<p class="texto-apoyo" style="margin-top:-15px; padding-left:30px">Miembro Comité Científico.</p><p class="texto-apoyo" style="margin-top:-15px; padding-left:30px">Diseñador Industrial y Gráfico de la Escola de Disseny Elisava, Barcelona,. Editor del libro “Hechos del Diseño”; escribe en publicaciones científicas como Revista ARQ, Temes de Disseny, (Barcelona), Mercosur Design, (Roma), Design DK, (Copenhagen).</p>
+
+<p class="texto-apoyo" style="font-weight:bold; margin-right:300px; text-transform: uppercase">Laura Novik – Argentina.</p>
+<p class="texto-apoyo" style="margin-top:-15px; padding-left:30px">Miembro Comité de Contenidos.</p><p class="texto-apoyo" style="margin-top:-15px; padding-left:30px">Diseñadora de modas y textiles, arquitecta e investigadora. Es consultora de moda especializada en análisis de tendencias, comunicación y desarrollo de colecciones; trabaja para empresas y entidades de gobierno de América Latina y USA. Sus clientes actuales son Promperú, Cooperación Italiana, Ripley (Retail), McCann Erickson y Revista Paula. Activista de la Moda Ética desde www.raizdiseno.org</p>
+
+<p class="texto-apoyo" style="font-weight:bold; margin-right:300px; text-transform: uppercase">Carol Garcia – Brasil.</p>
+<p class="texto-apoyo" style="margin-top:-15px; padding-left:30px">Miembro Comité de Contenidos.</p><p class="texto-apoyo" style="margin-top:-15px; padding-left:30px">Periodista con maestría en Comunicación y Semiótica en la Pontificia Universidad Católica de Sao Paulo y Doctora en el mismo programa bajo auspicio de CAPES Brasil. Consultora para las áreas de comunicación y semiótica, estrategia de marketing y análisis de comportamientos de consumo de moda, atendiendo empresas establecidas en los Estados Unidos y en Brasil desde 1998. Es directora científica de Modus – Marketing & Semiótica . Co-autora del libro Moda é Comunicação: experiências, memórias, vínculos (Ed. Anhembi Morumbi, 2005) y co-organizadora de la obra Moda Brasil – Fragmentos de um Vestir Tropical (Editora Anhembi Morumbi, 2001).</p>
+
+<p class="texto-apoyo" style="font-weight:bold; margin-right:300px; text-transform: uppercase">Kathia Castilho – Brazil.</p>
+<p class="texto-apoyo" style="margin-top:-15px; padding-left:30px">Miembro Comité Científico.</p><p class="texto-apoyo" style="margin-top:-15px; padding-left:30px">Doctora y maestra en Comunicación y Semiótica de la PUC. Sao Paulo. Presidente de la Asociación brasilera de Estudios e Investigaciones en Moda. Vice presidente del Coloquio Nacional de Moda, el mayor evento académico Científico en el Brasil y del Foro de Escuelas de Moda.</p>
+
+<p class="texto-apoyo" style="font-weight:bold; margin-right:300px; text-transform: uppercase">William Cruz - Colombia.</p>
+<p class="texto-apoyo" style="margin-top:-15px; padding-left:30px">Secretario Comité Científico.</p><p class="texto-apoyo" style="margin-top:-15px; padding-left:30px">Graduado de Artes Plásticas con especialización en Estética de la Universidad Nacional de Colombia sede Antioquia; es docente de historia de la moda y el vestuario en la Universidad Pontificia Bolivariana UPB.
+Asesor del programa Afin de Inexmoda. Autor de numerosos artículos sobre historia de la moda y el vestir.</p>
+
+
+<p class="cuerpo-texto" style="font-weight:bold; margin-right:300px; margin-top:50px; color:#737373">ENTIDADES ADSCRITAS</p>
+
+<p class="texto-apoyo" style="font-weight:bold; margin-right:300px; text-transform: uppercase">INEXMODA – Colombia.</p>
+<p class="texto-apoyo" style="margin-top:-15px; padding-left:30px">Miembro Comité de Contenidos.</p><p class="texto-apoyo" style="margin-top:-15px; padding-left:30px">Instituto para la Exportación de la Moda INEXMODA es una entidad privada sin ánimo de lucro, generadora de herramientas de investigación, comercialización, innovación, capacitación e internacionalización para el Sistema Moda. www.inexmoda.org.co</p><p class="texto-apoyo" style="margin-top:-15px; padding-left:30px; text-transform: uppercase">Martha Calad, delegada para Ixel Moda.</p><p class="texto-apoyo" style="margin-top:-15px; padding-left:30px">Diseñadora de interiores, investigadora y estudiosa del diseño es, desde hace mas de 15 años, directora del laboratorio de conceptos de INEXMODA -responsable de la investigación sobre sensibilidades y conceptos de los consumidores a escala mundial-. Experta conocedora del teorema del diseño y su aplicación en la evolución del consumidor de moda colombiano.</p>
+
+<p class="texto-apoyo" style="font-weight:bold; margin-right:300px; text-transform: uppercase">CMD – Argentina.</p>
+<p class="texto-apoyo" style="margin-top:-15px; padding-left:30px">Miembro Comité de Contenidos.</p><p class="texto-apoyo" style="margin-top:-15px; padding-left:30px">El Centro Metropolitano de Diseño CMD, es una entidad pública de la Ciudad reconocida en toda Latinoamérica por impulsar la incorporación del diseño a las empresas de Buenos Aires y generar, a partir de esto, más trabajo y una mejor calidad de vida para todos los vecinos.</p><p class="texto-apoyo" style="margin-top:-15px; padding-left:30px; text-transform: uppercase">Marco Amadeo, delegado para Ixel Moda. Coordinador General de la Oficina de Moda y del CMD.</p>
+
+
+
+<p class="cuerpo-texto" style="font-weight:bold; margin-right:300px; margin-top:50px; color:#737373">COMITÉ ASESOR</p>
+
+<p class="texto-apoyo" style="font-weight:bold; margin-right:300px; text-transform: uppercase">Adriana Betancur.</p>
+<p class="texto-apoyo" style="margin-top:-15px; padding-left:30px">Decana de la Facultad de Diseño de la Colegiatura Colombiana. Diseñadora de modas egresada de la Colegiatura Colombiana y arquitecta diseñadora egresada de la Universidad Pontificia Bolivariana de Medellín.</p>
+
+<p class="texto-apoyo" style="font-weight:bold; margin-right:300px; text-transform: uppercase">Amparo Velásquez.</p>
+<p class="texto-apoyo" style="margin-top:-15px; padding-left:30px">Directora de alianzas interinstitucionales de la UPB Universidad Pontificia Bolivariana de Medellín y miembro del Consejo Directivo y Asamblea, Asociación Colombiana Red Académica de Diseño.</p>
+
+<p class="texto-apoyo" style="font-weight:bold; margin-right:300px; text-transform: uppercase">Arturo Tejada.</p>
+<p class="texto-apoyo" style="margin-top:-15px; padding-left:30px">Director de la Escuelas de Diseño & Mercadeo de Moda Arturo Tejada Cano. Arquitecto UPC, diseñador y empresario de la educación. Experto en Marketing Internacional (Misiones Comerciales y Tecnológicas a Francia, Italia, España, Alemania, EUA, China, Brasil, Perú).</p>
+
+<p class="texto-apoyo" style="font-weight:bold; margin-right:300px; text-transform: uppercase">Astrid Barrios.</p>
+<p class="texto-apoyo" style="margin-top:-15px; padding-left:30px">Directora de modas y alta costura de la UAC. Doctora en Ciencias de la Educación, Magister en Mercadeo, Especialista en Gerencia de Producción y Operaciones, Profesional en Ingeniería Industrial y en Diseño de Modas y Textil.</p>
+
+<p class="texto-apoyo" style="font-weight:bold; margin-right:300px; text-transform: uppercase">Barbara Trebitsch.</p>
+<p class="texto-apoyo" style="margin-top:-15px; padding-left:30px">Directora de Postgrado en Moda de Domus Academy, graduada en Diseño de Modas de IED Instituto Europeo de Diseño de Roma, Master en Diseño de Moda de Domus Academy.</p>
+
+<p class="texto-apoyo" style="font-weight:bold; margin-right:300px; text-transform: uppercase">Bibiana Tinjancá.</p>
+<p class="texto-apoyo" style="margin-top:-15px; padding-left:30px">Directora del Programa Profesional de Diseño de Modas de la Fundación Área Andina, Pereira.</p>
+
+<p class="texto-apoyo" style="font-weight:bold; margin-right:300px; text-transform: uppercase">Carolina Agudelo.</p>
+<p class="texto-apoyo" style="margin-top:-15px; padding-left:30px">Diseñadora Textil y de Superficies, Coordinadora del Programa de Diseño Opción Textil y Vestuario de la Universidad de los Andres. Profesora de Planta en cursos sobre Diseño de Superficies, Diseño de Vestuario y Proyecto de Grado.</p>
+
+<p class="texto-apoyo" style="font-weight:bold; margin-right:300px; text-transform: uppercase">Gloria Ramirez.</p>
+<p class="texto-apoyo" style="margin-top:-15px; padding-left:30px">Directora International Student Advisor GR Estudios, representante del Instituto Europeo di Design para Latinoamérica.</p>
+
+<p class="texto-apoyo" style="font-weight:bold; margin-right:300px; text-transform: uppercase">Lita Herrera.</p>
+<p class="texto-apoyo" style="margin-top:-15px; padding-left:30px">Coordinadora del Programa de Diseño de Modas y Patronaje de Unidades Tecnologicas de Santander y Presidenta de la Asociación Santandereana de diseñadores de moda “ASDIMODA”.</p>
+
+<p class="texto-apoyo" style="font-weight:bold; margin-right:300px; text-transform: uppercase">Luz Guiomar Maldonado.</p>
+<p class="texto-apoyo" style="margin-top:-15px; padding-left:30px">Directora del Programa de Diseño de Modas de la Universidad Autónoma de Manizales.</p>
+
+<p class="texto-apoyo" style="font-weight:bold; margin-right:300px; text-transform: uppercase">Maria Victoria Tovar.</p>
+<p class="texto-apoyo" style="margin-top:-15px; padding-left:30px">Directora del Programa Profesional de Diseño de Modas de la Fundación Área Andina de Bogota y Medellín.</p>
+
+<p class="texto-apoyo" style="font-weight:bold; margin-right:300px; text-transform: uppercase">Mirtha Altahona.</p>
+<p class="texto-apoyo" style="margin-top:-15px; padding-left:30px">Directora de Programa de Diseño de Modas y Aplicaciones textiles de la Universidad Manuela Beltrán ITAE.</p>
+
+<p class="texto-apoyo" style="font-weight:bold; margin-right:300px; text-transform: uppercase">Sandra Gomez.</p>
+<p class="texto-apoyo" style="margin-top:-15px; padding-left:30px">Directora Académica de Lasalle College International .Diseñadora Textil egresada del Programa de Textiles de la Universidad de los Andes con dominio de tecnología del tejido y el desarrollo de Productos textiles.</p>
+						<!--<a href="javascript:void()"><img class="image3" src="imagenes/calendarioff.png" onmouseover="this.src='imagenes/calendarion.png'" onmouseout="this.src='imagenes/calendarioff.png'"/></a>-->
+       				</div>
+   				</div>
+    
+   				<div class="tab">
+       				<input type="radio" id="tab-2" name="tab-group-1">
+       				<label for="tab-2">EQUIPO DE TRABAJO</label>
+       
+       				<div class="content">
+          			 	<h1 class="titulo-comunicado">EQUIPO DE TRABAJO</h1>
+        				<p2>Ixel ha construido su ADN sobre la dinámica del mundo creativo, buscando siempre mantener sus 3 principales propósitos:</p>
+<p2>- Punto de unión entre la academia y el círculo productivo</p><p2>
+- Sostenibilidad y responsabilidad social</p><p2>
+- Investigación alineada a planeación estratégica del negocio</p>
+
+<p2>En este orden de ideas, año a año, hemos venido aportando un imputs a la cadena a través de la capacitación continua, con una nueva visión integrada del negocio. Siendo así, nuestros ejes temáticos han construido una secuencia lógica: creación, mercadeo y comercialización; sustentabilidad y responsabilidad social; competitividad; ​emprendimiento; ​co-creación y el boom de la industria creativa latinoamericana.</p>
+
+<p2>Para esta 7ª versión, buscando una respuesta integral y efectiva del diseño, abordaremos un tema que sí bien está en boga desde hace más de una década hoy, más que nunca, se hace inexcusable: el diseño estratégico… "Innovar, Diferenciar, Competir".
+
+Sin duda, el diseño es resultado de la pasión, de esa ilusión por plasmar aquello que imaginamos; pero cuando se diseña pensando sólo en el producto y se pierde la visión estratégica del negocio, se aumentan las  posibilidades de fracasar.
+
+Para crear es necesario tener en perspectiva: primero, nuestro negocio o empresa; segundo, la competencia; y tercero, el mercado, esas variables que influyen en la toma de decisión del comprador o consumidor. Todo eso es lo que los expertos llaman: DISEÑO ESTRATÉGICO, una metodología que conlleva innovación, diferenciación y competitividad.
+
+Ahora bien, la tendencia en la planeación estratégica es integrar a la esencia del negocio el compromiso con los valores éticos, la comunidad, las personas y el medio ambiente; y es aquí donde, en concordancia con lo expuesto como parte de nuestra misión, este tema nos brinda, además, la posibilidad de explorar todo un mapa de proyectos que atiendan necesidades y problemáticas sociales en procura de un desarrollo económico sostenible.</p>
+						<!--<a href="javascript:void()"><img class="image4" src="imagenes/calendarioff.png" onmouseover="this.src='imagenes/calendarion.png'" onmouseout="this.src='imagenes/calendarioff.png'"/></a>-->
+       				</div> 
+   				</div>
+                
+                <div class="tab">
+       				<input type="radio" id="tab-3" name="tab-group-1">
+       				<label for="tab-3">CONCILIO DIRECTIVO</label>
+       
+       				<div class="content">
+          			 	<h1 class="titulo-comunicado">CONCILIO DIRECTIVO</h1>
+        				<p2>Ixel ha construido su ADN sobre la dinámica del mundo creativo, buscando siempre mantener sus 3 principales propósitos:</p>
+<p2>- Punto de unión entre la academia y el círculo productivo</p><p2>
+- Sostenibilidad y responsabilidad social</p><p2>
+- Investigación alineada a planeación estratégica del negocio</p>
+
+<p2>En este orden de ideas, año a año, hemos venido aportando un imputs a la cadena a través de la capacitación continua, con una nueva visión integrada del negocio. Siendo así, nuestros ejes temáticos han construido una secuencia lógica: creación, mercadeo y comercialización; sustentabilidad y responsabilidad social; competitividad; ​emprendimiento; ​co-creación y el boom de la industria creativa latinoamericana.</p>
+
+<p2>Para esta 7ª versión, buscando una respuesta integral y efectiva del diseño, abordaremos un tema que sí bien está en boga desde hace más de una década hoy, más que nunca, se hace inexcusable: el diseño estratégico… "Innovar, Diferenciar, Competir".
+
+Sin duda, el diseño es resultado de la pasión, de esa ilusión por plasmar aquello que imaginamos; pero cuando se diseña pensando sólo en el producto y se pierde la visión estratégica del negocio, se aumentan las  posibilidades de fracasar.
+
+Para crear es necesario tener en perspectiva: primero, nuestro negocio o empresa; segundo, la competencia; y tercero, el mercado, esas variables que influyen en la toma de decisión del comprador o consumidor. Todo eso es lo que los expertos llaman: DISEÑO ESTRATÉGICO, una metodología que conlleva innovación, diferenciación y competitividad.
+
+Ahora bien, la tendencia en la planeación estratégica es integrar a la esencia del negocio el compromiso con los valores éticos, la comunidad, las personas y el medio ambiente; y es aquí donde, en concordancia con lo expuesto como parte de nuestra misión, este tema nos brinda, además, la posibilidad de explorar todo un mapa de proyectos que atiendan necesidades y problemáticas sociales en procura de un desarrollo económico sostenible.</p>
+						<!--<a href="javascript:void()"><img class="image4" src="imagenes/calendarioff.png" onmouseover="this.src='imagenes/calendarion.png'" onmouseout="this.src='imagenes/calendarioff.png'"/></a>-->
+       				</div> 
+   				</div>
+    
+			</div>
+
+		</div>
+       		
+   		</div>
+    </div>
+    
+      <!--FOOTER-->
+    
+    <div id="footer">
+    	<div id="foot-info"><a id="foot"></a>
+        	<div id="contactos">
+            	<h1>CONTACTOS</h1>
+                <div id="cont">
+                	<p>Patrocinios:
+                    comercial@ixelmoda.com</p><p>Inscripciones:
+					inscripciones@ixelmoda.com</p><p>Paquetes turísticos:
+					marcelaayazo@gematours.com</p><p>Oficina de Prensa:
+					prensa@ixelmoda.com
+					prensafabiolamoreracam@gmail.com
+					gerencia@fabiolamorera.com.co</p><p>Contenidos:
+					daniloc@ixelmoda.com</p><p>Pasarelas:
+					yesido@ixelmoda.com</p>
+                </div>
+                <div id="mini-redes">
+                	<a href="https://www.instagram.com/ixelmoda"><img src="imagenes/miniIG.png"/></a>
+                    <a href="https://www.facebook.com/CongresoIxelModa"><img src="imagenes/miniFB.png"/></a>
+                    <a href="https://www.flickr.com/photos/ixelmoda/"><img src="imagenes/miniFL.png"/></a>
+                    <a href="https://twitter.com/IXEL_MODA"><img src="imagenes/miniTW.png"/></a>
+                    <a href="https://www.youtube.com/user/ixelmoda"><img src="imagenes/miniYT.png"/></a>
+                </div>
+            </div>
+            <img class="ima-foot" src="imagenes/footer.png"/>
+            <div id="sponsors">
+            	<div class="patrocinio">
+            	<h2>PROMUEVEN</h2><img src="imagenes/PROMUEVEN.png" style="height:80px"/>
+                </div>
+                <hr/>
+                <div class="patrocinio">
+            	<h2>APOYAN</h2><img src="imagenes/APOYAN.png" style="height:60px"/>
+                </div>
+                <hr/>
+                <div class="patrocinio">
+            	<h2 style="margin-top:25px">ORGANIZAN</h2>
+                <img src="imagenes/ORGANIZAN.png" style="height:100px; margin-top:-20px; margin-bottom:20px"/>
+                </div>
+                
+                <!--carrousel de logos-->
+                <div id="owl-demo" class="owl-carousel owl-theme" style="margin-bottom:10px; margin-top:10px">
+    				<div class="item"><img src="imagenes/logos carrousel/0.png" /></div>
+    				<div class="item"><img src="imagenes/logos carrousel/1.png" /></div>
+    				<div class="item"><img src="imagenes/logos carrousel/2.png" /></div>
+    				<div class="item"><img src="imagenes/logos carrousel/3.png" /></div>
+    				<div class="item"><img src="imagenes/logos carrousel/4.png" /></div>
+    				<div class="item"><img src="imagenes/logos carrousel/5.png" /></div>
+    				<div class="item"><img src="imagenes/logos carrousel/6.png" /></div>
+    				<div class="item"><img src="imagenes/logos carrousel/7.png" /></div>
+    				<div class="item"><img src="imagenes/logos carrousel/8.png" /></div>
+    				<div class="item"><img src="imagenes/logos carrousel/9.png" /></div>
+                    <div class="item"><img src="imagenes/logos carrousel/10.png" /></div>
+                    <div class="item"><img src="imagenes/logos carrousel/11.png" /></div>
+                    <div class="item"><img src="imagenes/logos carrousel/12.png" /></div>
+                    <div class="item"><img src="imagenes/logos carrousel/13.png" /></div>
+                    <div class="item"><img src="imagenes/logos carrousel/14.png" /></div>
+                    <div class="item"><img src="imagenes/logos carrousel/15.png" /></div>
+                    <div class="item"><img src="imagenes/logos carrousel/16.png" /></div>
+   				</div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
