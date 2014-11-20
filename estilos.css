@@ -356,17 +356,15 @@ p{
   border-top: 1px solid #f39124; 
   bottom: 0;
   left: 0;
-  margin-top: 14px;
   padding: 20px; 
   position: absolute;
   right: 0;
-  top: 28px;
+  top: 42px;
 }
 .tab [type=radio]:checked ~ label {
   background:#FFF;
   border-bottom:1px solid transparent;
   color:#f39124;
-  padding-bottom:3px;
   z-index: 2;
 }
 .tab [type=radio]:checked ~ label ~ .content {
