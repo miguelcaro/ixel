@@ -27,11 +27,6 @@ a, visited{
 	color:#fff;
 }
 
-p{
-	margin:0;
-	padding:8px;
-	color:#fff;
-}
 
 .p2{
 	font-size:12px;
@@ -44,6 +39,12 @@ p{
 	display: block;
 }
 
+.caja p{
+	margin:0;
+	padding:8px;
+	color:#fff;
+}
+
 .caja:hover{
 	background-image:url(imagenes/cajaoff.png);
 	font-family:"gothic r";
@@ -54,6 +55,12 @@ p{
 	height:36px;
 	background-image:url(imagenes/inscripciones.png);
 	display: block;
+}
+
+.caja-ins p{
+	margin:0;
+	padding:8px;
+	color:#fff;
 }
 
 .caja-ins:hover{

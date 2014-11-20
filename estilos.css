@@ -201,7 +201,7 @@ video#bgvid {
 }
 
 p{
-	color:#666;
+  color:#666;
 }
 
 #foto1{
@@ -316,9 +316,6 @@ p{
 	top:50px;
 }
 
-p2{
-	font-size:14px;
-}
 /* ----------------------TOGGLE--------------------- */
 
 .tabs {
@@ -375,8 +372,7 @@ p2{
 	padding-bottom:30px;
 	float:left;
 	width:100%;
- 	background-color:rgba(0,0,0,0.8);
-	opacity:1;
+ 	background-color:#FFF;
 }
 
 #foot-info{
