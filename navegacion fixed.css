@@ -41,6 +41,7 @@ p{
 	text-align:center;
 	height:36px;
 	background-image:url(imagenes/cajaon.png);
+	display: block;
 }
 
 .caja:hover{
@@ -52,6 +53,7 @@ p{
 	text-align:center;
 	height:36px;
 	background-image:url(imagenes/inscripciones.png);
+	display: block;
 }
 
 .caja-ins:hover{
