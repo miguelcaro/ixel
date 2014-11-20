@@ -341,23 +341,26 @@ p{
   position: relative;
   left: 160px;
   color:#FFF;
+  z-index:99;
 }
 .tab [type=radio] {
   display: none;   
 }
 .content {
   position: absolute;
-  top: 28px;
+  top: 38px;
   left: 0;
   background: white;
   right: 0;
   bottom: 0;
   padding: 20px; 
+  border:solid #f39124 1px;
 }
 [type=radio]:checked ~ label {
   background:#FFF;
   border-bottom:0px solid #f39124;
   color:#f39124;
+  padding-bottom:3px;
   z-index: 2;
 }
 [type=radio]:checked ~ label ~ .content {
