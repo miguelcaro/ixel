@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -8,14 +8,15 @@
         <link href="provicional.css" rel="stylesheet" type="text/css" />
         <link href="navegacion fixed.css" rel="stylesheet" type="text/css" />
         <link href="owl.carousel.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="magnific-popup.css">
 
         <!--fancy box-->
         <!-- Add jQuery library -->
-        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
         <!-- Add mousewheel plugin (this is optional) -->
         <script type="text/javascript" src="js/fancy-box/lib/jquery.mousewheel-3.0.6.pack.js"></script>
-
+       
         <!-- Add fancyBox -->
         <link rel="stylesheet" href="js/fancy-box/source/jquery.fancybox.css" />
         <script type="text/javascript" src="js/fancy-box/source/jquery.fancybox.pack.js"></script>
@@ -25,9 +26,8 @@
         <script type="text/javascript" src="js/fancy-box/source/helpers/jquery.fancybox-thumbs.js"></script>
 
         <!--carrousel de logos-->
-        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="js/owl.carousel.js"></script>
-
+        
         <style>
           .customNavigation{
                 text-align: center;
@@ -44,39 +44,8 @@
          
         </style>
         <link href="owl.carousel.css" rel="stylesheet" type="text/css" />
-        <script>
 
-            $(document).ready(function() {
-             
-              var owl = $("#owl-demo");
-                    owl.owlCarousel({
-                  items : 5, //10 items above 1000px browser width
-                  itemsDesktop : [1000,5], //5 items between 1000px and 901px
-                  itemsDesktopSmall : [900,3], // betweem 900px and 601px
-                  itemsTablet: [600,2], //2 items between 600 and 0
-                  itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
-                });
-          
-              // Para que el carousel se mueva cuando cargue la pagina 
-                owl.trigger('owl.play',1800); //mil es un segundo
-                // Esto es si quieres ponerles botones..
-                $(".next").click(function(){
-                    owl.trigger('owl.next');
-                })
-                $(".prev").click(function(){
-                    owl.trigger('owl.prev');
-                })
-                $(".play").click(function(){
-                    owl.trigger('owl.play',1000); //owl.play event accept autoPlay speed as second parameter
-                })
-                $(".stop").click(function(){
-                    owl.trigger('owl.stop');
-                })
-    
-            });
-
-        </script>
-
+        <script type="text/javascript" src="js/global.js"></script>
     </head>
 
     <body>
@@ -152,6 +121,7 @@
         <section>
           <div class="wrapper">
             <h2 class="grand-title">Cartagena, destino de moda.</h2>
+            <div class="picture-banner cartagena"></div>
             <h3 class="subtitle">La ciudad</h3>
             <div class="info">
               <p>
@@ -170,7 +140,16 @@
                 Sus hermosos paisajes naturales se combinan con el imponente conjunto arquitectónico que conjuga magistralmente una ciudad cosmopolita, moderna y contemporánea con el encanto de una ciudad antigua que conserva la esencia de la época colonial, sus callezuelas, plazas y balcones de madera, enmarcada por enormes murallas frente al mar.
               </p>
             </div>
-            <a href="javascript:;"><em>+ Galería de fotos de la ciudad</em></a>
+            <em>Galería de fotos de la ciudad</em>
+            <div class="js-tile-gallery">
+              <ul class="no-decoration">
+                <li><a class="tile" href="imagenes/cartagena/SAN FELIPE 2.jpg"><img src="imagenes/cartagena/SAN FELIPE 2.jpg" alt=""></a></li>
+                <li><a class="tile" href="imagenes/cartagena/pz-torredereloj12.jpg"><img src="imagenes/cartagena/pz-torredereloj12.jpg" alt=""></a></li>
+                <li><a class="tile" href="imagenes/cartagena/IMG_6494.jpg"><img src="imagenes/cartagena/IMG_6494.jpg" alt=""></a></li>
+                <li><a class="tile" href="imagenes/cartagena/GOPR3200.jpg"><img src="imagenes/cartagena/GOPR3200.jpg" alt=""></a></li>
+                <li><a class="tile" href="imagenes/cartagena/ch-balcones.jpg"><img src="imagenes/cartagena/ch-balcones.jpg" alt=""></a></li>
+              </ul>
+            </div>
             <h3 class="subtitle">Programa Cartagena, Destino de moda</h3>
             <div class="info">
               <p>
@@ -271,10 +250,6 @@
         </div>
         <!-- footer end -->
 
-        <script type="text/javascript">
-          $(document).ready(function() {
-            $(".fancybox").fancybox();
-          });
-        </script>  
+      
     </body>
 </html>
