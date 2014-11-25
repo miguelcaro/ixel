@@ -37,7 +37,10 @@ video#bgvid {
 	background-size: cover;
 }
 
-
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
 
 /*contenido*/
 #logo{
@@ -503,3 +506,4 @@ section{
 .js-tile-gallery ul{margin:0;padding:0;}
 .js-tile-gallery li{display:inline-block;}
 .js-tile-gallery img{width: 310px;height:250px;}
+.js-tile-gallery.custom--gallery img{height: auto;}
