@@ -498,6 +498,9 @@ section{
 	color:#f39124;
 }
 
+.info b{color:#f39124;}
+.info .subtitle{margin:30px 0 10px; padding-bottom: 0;}
+
 .picture-banner{
 	height:320px;
 	width:100%;
@@ -508,7 +511,19 @@ section{
 	background-size: 960px 590px;
 }
 
+.picture-banner.salon-artesanal{
+	background: url("imagenes/artesanal/link_salonartesanal.jpg") no-repeat 0px -130px;
+	background-size: 960px 590px;
+}
+
+.picture-banner.infashion{
+	background: url("imagenes/infashion/AH.jpg") no-repeat 0px -263px;
+	background-size: 960px 900px;
+}
+
 .js-tile-gallery ul{margin:0;padding:0;}
-.js-tile-gallery li{display:inline-block;}
-.js-tile-gallery img{width: 310px;height:250px;}
+
+.js-tile-gallery li{display:inline-block;overflow: hidden;height:250px;width:310px;}
+.js-tile-gallery img{min-width: 310px;height:auto;width:100%;min-height:250px;}
 .js-tile-gallery.custom--gallery img{height: auto;}
+

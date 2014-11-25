@@ -15,8 +15,10 @@ $(document).ready(function() {
       owl.trigger('owl.play',1800); //mil es un segundo
       
 
-    $('.tile').magnificPopup({ 
-      type: 'image'
-      // other options
-    });
+    if($('.js-tile-gallery').length){
+      $('.tile').magnificPopup({ 
+        type: 'image'
+        // other options
+      });
+    }
 });
