@@ -417,6 +417,11 @@ h5{
 	font-size:13px;
 }
 
+#cont a{
+	color: #F39124;
+	text-decoration: underline;
+}
+
 #mini-redes{
 	height:30px;
 	margin-top:15px;
