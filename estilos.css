@@ -499,7 +499,10 @@ section{
 }
 
 .info b{color:#f39124;}
+.info p,
+.info li{line-height: 1.5;}
 .info .subtitle{margin:30px 0 10px; padding-bottom: 0;}
+.info.winners strong{color:#f39124;}
 
 .picture-banner{
 	height:320px;
@@ -526,6 +529,22 @@ section{
 .js-tile-gallery li{display:inline-block;overflow: hidden;height:250px;width:310px;}
 .js-tile-gallery img{min-width: 310px;height:auto;width:100%;min-height:250px;}
 .js-tile-gallery.custom--gallery img{height: auto;}
+
+.tab-menu{text-align:center;}
+.tab-menu a{
+	font-weight: bold;
+	margin-top: -7px;
+	display: block;
+}
+.tab-menu a.active{color:#91b50e;}
+.tab-menu li{
+	display:inline-block;
+	height:5px;
+	border-left: solid #f39124 1px;
+	text-align: center;
+	padding:5px 15px;
+}
+.tab-menu li:last-child{border-right: solid #f39124 1px;}
 
 .read-more{
 	font-style: italic;
