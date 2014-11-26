@@ -524,6 +524,33 @@ section{
 	background-size: 960px 900px;
 }
 
+.picture-banner.alojamiento{
+	background: url("imagenes/alojamiento/banner.jpg") no-repeat 0px -30px;
+	background-size: 960px 590px;
+}
+
+.picture-banner.pasarelas{
+	background: url("imagenes/pasarelas/banner.jpg") no-repeat 0px -180px;
+	background-size: 960px 590px;
+}
+
+.picture-banner.forosectorial{
+	background: url("imagenes/forosectorial/banner.jpg") no-repeat 0px -130px;
+	background-size: 960px 590px;
+}
+
+.picture-banner.congresoacademico{
+	background: url("imagenes/congresoacademico/banner.jpg") no-repeat 0px -100px;
+	background-size: 960px 590px;
+}
+
+.picture-banner.ixelmoda{
+	background: url("imagenes/ixelmoda/banner.jpg") no-repeat 0px -10px;
+	background-size: 960px 590px;
+}
+
+
+
 .js-tile-gallery ul{margin:0;padding:0;}
 
 .js-tile-gallery li{display:inline-block;overflow: hidden;height:250px;width:310px;}
