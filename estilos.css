@@ -527,3 +527,7 @@ section{
 .js-tile-gallery img{min-width: 310px;height:auto;width:100%;min-height:250px;}
 .js-tile-gallery.custom--gallery img{height: auto;}
 
+.read-more{
+	font-style: italic;
+	font-weight: bold;
+}
