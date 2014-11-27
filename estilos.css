@@ -470,6 +470,7 @@ hr{
 */
 
 .no-decoration li{list-style-type: none;}
+.aligncenter{text-align: center;}
 
 section{
 	background-color:#FFF;
@@ -549,6 +550,10 @@ section{
 	background-size: 960px 590px;
 }
 
+.picture-banner.inscripciones{
+	background: url("imagenes/cartagena/link_inscripciones.jpg") no-repeat 0px -130px;
+	background-size: 960px 590px;
+}
 
 
 .js-tile-gallery ul{margin:0;padding:0;}
