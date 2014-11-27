@@ -284,7 +284,7 @@ h5{
 
 
 
-#info{
+span.index-info{
 	color:#FFF;
 	display: block;
 	font-family:"gothic b";
@@ -476,6 +476,7 @@ section{
 	background-color:#FFF;
 	clear:both;
 	padding:50px 0;
+	overflow: hidden;
 }
 
 .wrapper{
