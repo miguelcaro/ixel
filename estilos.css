@@ -19,6 +19,7 @@
 }
 
 body{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	padding:0;
 	margin:0;
 	overflow-y: scroll;
@@ -74,6 +75,17 @@ video#bgvid {
 	height:185px;
 	position:absolute;
 	top:530px;
+}
+
+.inner-banner{
+	height:335px !important;
+}
+
+
+.inner-banner #main{
+	float:none;
+	position:static;
+  margin-top:150px;
 }
 
 #banner{
@@ -310,7 +322,6 @@ span.index-info{
 	margin-left:auto;
 	margin-right:auto;
 	text-align:justify;
-	font-family:"gothic r";
 	font-size:16px;
 	color:#323232;
 }
@@ -516,9 +527,19 @@ section{
 	background-size: 960px 590px;
 }
 
+.inner-banner.cartagena{
+	background: url("imagenes/cartagena/link_cartagenadestinodemoda.jpg") no-repeat 0px -130px;
+	background-size: cover;
+}
+
 .picture-banner.salon-artesanal{
 	background: url("imagenes/artesanal/link_salonartesanal.jpg") no-repeat 0px -130px;
 	background-size: 960px 590px;
+}
+
+.inner-banner.salon-artesanal{
+	background: url("imagenes/artesanal/link_salonartesanal.jpg") no-repeat 0px -130px;
+	background-size: cover;
 }
 
 .picture-banner.infashion{
@@ -526,9 +547,19 @@ section{
 	background-size: 960px 900px;
 }
 
+.inner-banner.infashion{
+	background: url("imagenes/infashion/AH.jpg") no-repeat 0px -263px;
+	background-size: cover;
+}
+
 .picture-banner.alojamiento{
 	background: url("imagenes/alojamiento/banner.jpg") no-repeat 0px -30px;
 	background-size: 960px 590px;
+}
+
+.inner-banner.alojamiento{
+	background: url("imagenes/alojamiento/banner.jpg") no-repeat 0px -165px;
+	background-size: cover;
 }
 
 .picture-banner.pasarelas{
@@ -536,9 +567,19 @@ section{
 	background-size: 960px 590px;
 }
 
+.inner-banner.pasarelas{
+	background: url("imagenes/pasarelas/banner.jpg") no-repeat 0px -180px;
+	background-size: cover;
+}
+
 .picture-banner.forosectorial{
 	background: url("imagenes/forosectorial/banner.jpg") no-repeat 0px -130px;
 	background-size: 960px 590px;
+}
+
+.inner-banner.forosectorial{
+	background: url("imagenes/forosectorial/banner.jpg") no-repeat 0px -130px;
+	background-size: cover;
 }
 
 .picture-banner.congresoacademico{
@@ -546,9 +587,19 @@ section{
 	background-size: 960px 590px;
 }
 
+.inner-banner.congresoacademico{
+	background: url("imagenes/congresoacademico/banner.jpg") no-repeat 0px -100px;
+	background-size: cover;
+}
+
 .picture-banner.ixelmoda{
 	background: url("imagenes/ixelmoda/banner.jpg") no-repeat 0px -10px;
 	background-size: 960px 590px;
+}
+
+.inner-banner.ixelmoda{
+	background: url("imagenes/ixelmoda/banner.jpg") no-repeat 0px -142px;
+	background-size: cover;
 }
 
 .picture-banner.inscripciones{
@@ -556,26 +607,45 @@ section{
 	background-size: 960px 590px;
 }
 
+.inner-banner.inscripciones{
+	background: url("imagenes/cartagena/link_inscripciones.jpg") no-repeat 0px -130px;
+	background-size: cover;
+}
+
 
 .js-tile-gallery ul{margin:0;padding:0;}
 
-.js-tile-gallery li{display:inline-block;overflow: hidden;height:250px;width:310px;}
+.js-tile-gallery li{display:inline-block;overflow: hidden;height:250px;width:308px;}
 .js-tile-gallery img{min-width: 310px;height:auto;width:100%;min-height:250px;}
 .js-tile-gallery.custom--gallery img{height: auto;}
 
-.tab-menu{text-align:center;}
-.tab-menu a{
-	font-weight: bold;
-	margin-top: -7px;
-	display: block;
+.tab-menu{
+	margin-top:50px;
+	border-bottom:solid #f39124 1px;
+	text-align:center;
 }
-.tab-menu a.active{color:#91b50e;}
+.tab-menu a{
+	font-size: 16px;
+	color:#fff;
+	background-color: #f39124;
+	font-weight: bold;
+	display: block;
+	text-decoration: none;
+	padding:5px 15px;
+	position: relative;
+}
+.tab-menu a.active{
+	color:#f39124;
+	background-color: #FFF;
+	border-left:solid #f39124 1px;
+	border-right:solid #f39124 1px;
+	border-top:solid #f39124 1px;
+	top:1px;
+}
 .tab-menu li{
 	display:inline-block;
-	height:5px;
-	border-left: solid #f39124 1px;
 	text-align: center;
-	padding:5px 15px;
+	
 }
 .tab-menu li:last-child{border-right: solid #f39124 1px;}
 
